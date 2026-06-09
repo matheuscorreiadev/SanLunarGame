@@ -25,7 +25,7 @@ GROUND = (38, 48, 61)
 class SanLunarGame:
     def __init__(self, smoke_test=False):
         pygame.init()
-        pygame.display.set_caption("San Lunar: Cristais da Mare")
+        pygame.display.set_caption("San Lunar: Cristais da Maré")
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         self.clock = pygame.time.Clock()
         self.smoke_test = smoke_test
@@ -122,7 +122,7 @@ class SanLunarGame:
 
         self.oxygen -= dt
         if self.oxygen <= 0:
-            self.end_game("defeat", "Derrota: o oxigenio acabou.")
+            self.end_game("defeat", "Derrota: o oxigênio acabou.")
             return
 
         self.update_meteors(dt)
@@ -147,7 +147,7 @@ class SanLunarGame:
                 meteor["hit_cooldown"] = 0.6
                 self.respawn_meteor(meteor)
                 if self.hp <= 0:
-                    self.end_game("defeat", "Derrota: os meteoros destruiram o traje.")
+                    self.end_game("defeat", "Derrota: os meteoros destruíram o traje.")
                     return
 
     def respawn_meteor(self, meteor):
@@ -201,7 +201,7 @@ class SanLunarGame:
         self.center_text("SAN LUNAR", self.font_title, (WIDTH // 2, 82), (246, 241, 213))
         self.center_text("Cristais da Mare", self.font_big, (WIDTH // 2, 138), CYAN)
         self.center_text(
-            "Colete 6 cristais lunares e volte ao modulo antes que o oxigenio acabe.",
+            "Colete 6 cristais lunares e volte ao modulo antes que o oxigênio acabe.",
             self.font,
             (WIDTH // 2, 203),
             (217, 232, 255),
