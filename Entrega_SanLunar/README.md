@@ -1,4 +1,4 @@
-# San Lunar: Cristais da Mare
+# San Lunar: Cristais da Maré
 
 Demo de jogo 2D em Python criada para a atividade. O jogo usa `pygame`, abre em uma janela propria e nao roda via console/CMD.
 
